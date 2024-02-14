@@ -1,0 +1,31 @@
+--------menu----------
+1.create
+ 2.display
+ 3.insert
+ 4.delete
+ 5.exit----------------------
+enter your choice:1
+ enter the size of the array elements: 3
+ enter the elements for the array:
+ 10 25 30        
+enter your choice: 2
+ the array elements are:
+ 10
+ 25
+ 30
+ enter your choice:3
+ enter the position for the new element:
+ enter the element to be inserted :
+ enter your choice:2
+ the array elements are:
+ 10
+ 20
+ 25
+ enter your choice:
+ 30
+ 20
+ 1 
+ 4
+ enter the position of the element to be deleted:3
+ the deleted element is =30
+ enter your choice:5
