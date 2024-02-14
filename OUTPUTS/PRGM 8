@@ -1,0 +1,53 @@
+-----------------MENU-------------------- 
+ 1 –Create a DLL of n emp 
+ 2 - Display from beginning 
+ 3 - Insert at end
+ 4 - Delete at end 
+ 5 - Insert at beg 
+ 6 - Delete at beg 
+ 7 - exit ------------------------------------------ 
+ Enter choice : 1 
+ Enter no of employees : 2 
+ Enter ssn,name,department, designation, salary and phno of employee :
+ 1 RAJ SALES MANAGER 15000 911 
+ Enter ssn,name,department, designation, salary and phno of employee :
+ 2 RAVI HR ASST 10000 123 
+ Enter choice : 2 
+ Linked list elements from begining : 
+ 1 RAJ SALES MANAGER 15000.000000 911 
+ 2 RAVI HR ASST 10000.000000 123 
+ No of employees = 2 
+ Enter choice : 3 
+ Enter ssn,name,department, designation, salary and phno of employee : 
+ 3 RAM MARKET  MANAGER 50000 111 
+ Enter choice : 2 
+ Linked list elements from begining : 
+ 1 RAJ SALES MANAGER 15000.000000 911 
+ 2 RAVI HR ASST 10000.000000 123 
+ 3 RAM MARKET MANAGER 50000.000000 111 
+ No of employees = 3 
+ Enter choice : 4 
+ 3 RAM MARKET MANAGER 50000.000000 111 
+ Enter choice : 2 
+ Linked list elements from begining : 
+ 1 RAJ SALES MANAGER 15000.000000 911 
+ 2 RAVI HR ASST 10000.000000 123 
+ No of employees = 2 
+ Enter choice : 5 
+ Enter ssn,name,department, designation, salary and phno of employee :
+ 0 ALEX EXE TRAINEE 2000 133 
+ Enter choice : 2 
+ Linked list elements from begining : 
+ 0 ALEX EXE TRAINEE 2000.000000 133 
+ 1 RAJ SALES MANAGER 15000.000000 911 
+ 2 RAVI HR ASST 10000.000000 123 
+ No of employees = 3
+Enter choice : 6 
+ 0 ALEX EXE TRAINEE 2000.000000 133 
+Enter choice : 2 
+ Linked list elements from begining : 
+ 1 RAJ SALES MANAGER 15000.000000 911 
+ 2 RAVI HR ASST 10000.000000 123 
+ No of employees = 2 
+ Enter choice : 7
+ exit
