@@ -1,0 +1,7 @@
+enter the main string:
+good morning
+ enter a pattern string: 
+morning
+ enter a replace string: 
+evening  
+the resultant string is: good evening
