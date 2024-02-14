@@ -1,0 +1,106 @@
+#include<stdio.h>
+ #include <stdlib.h>
+ #define MAX 100        /* size of hash table*/
+ int create(int);
+              /* 
+function to create hash key*/
+ void linear_prob(int[], int, int);  /* function to avoid collision*/
+ void display (int[]);
+        /* 
+function to display HASH Table*/
+ void main()
+ {
+ int a[MAX],num,key,i; /*declarations*/
+ int ans=1;
+ for (i=0;i<MAX;i++)
+ {
+ a[i] = -1;   /* assign -1 to all positions*/
+ }
+ do
+ {
+ printf("\n Enter the data");
+ scanf("%d", &num);
+ key=create(num);
+ linear_prob(a,key,num);
+ printf("\n Do you wish to continue ? (1/0) ");
+ scanf("%d",&ans);
+ }while(ans);
+ display(a);
+ }
+ int create(int num)
+ {
+ int key;
+ key=num%100;
+ return key;
+ }
+ void linear_prob(int a[MAX], int key, int num)
+ {
+ int flag, i, count=0;
+ flag=0;
+ if(a[key]== -1) /*if key position is free, assign the value*/
+ {
+ a[key] = num;
+ }
+ else
+ {
+ printf("\nCollision Detected...!!!\n");
+ i=0;
+ while(i<MAX) /*check whether there exists any free position*/
+ {
+ if (a[i]!= -1)
+ count++;
+ i++;
+ }
+ printf("Collision avoided successfully using LINEAR PROBING\n");
+ if(count == MAX) /* no free position*/
+ {
+ printf("\n Hash table is full");
+ display(a);
+ exit(1);
+ }
+ for(i=key+1; i<MAX; i++) /* check whether next to key value position is free*/
+ if(a[i] == -1)
+ {
+ a[i] = num;
+ flag =1;
+ break;
+ }
+ i=0;
+ while((i<key) && (flag==0)) /*if all positions next to key are filled, check from start*/
+ {
+ if(a[i] == -1)
+ {
+ a[i] = num;
+ flag=1;
+ break;
+ }
+ i++;
+ }
+ }
+ }
+ void display(int a[MAX])
+ {
+ int i,choice;
+ printf("1.Display ALL\n 2.Filtered Display\n");
+ printf("Enter your choice\n");
+ scanf("%d",&choice);
+ switch(choice)
+ {
+ case 1: 
+printf("\n Complete Hash table is\n");
+ printf("KEY\tVALUE");
+ for(i=0; i<MAX; i++)
+ printf("\n %d\t%d ", i, a[i]);
+ break;
+ case 2:
+ printf("\n filtered Hash table is\n");
+ printf("KEY\tVALUE");
+ for(i=0; i<MAX; i++)
+ if(a[i]!=-1)
+ {
+ printf("\n %d\t%d ", i, a[i]);
+ continue;
+ }
+ break;
+ }
+ }
