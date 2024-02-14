@@ -1,0 +1,24 @@
+ enter the data1234
+ do you wish to continue ? (1/0) 1
+ enter the data2548
+ do you wish to continue ? (1/0) 1
+ enter the data3256
+ do you wish to continue ? (1/0) 1
+ enter the data1299
+ do you wish to continue ? (1/0) 1
+ enter the data1298
+ do you wish to continue ? (1/0) 1
+ enter the data1398
+ collision detected...!!!
+ collision avoided successfully using linear probing
+ do you wish to continue ? (1/0) 0
+ 1.display all
+ 2.filtered display
+ 2
+ the hash table is
+ 0 1398
+ 34 1234 
+ 48 2548 
+ 56 3256 
+ 98 1298 
+ 99 1299
