@@ -20,3 +20,8 @@ Enter no of terms of polynomial==>3
 Enter coef & expo==> 3 1 
 Enter coef & expo==>4 2 
 Enter coef & expo==>5 4
+ The polynomial is==>3x^1 + 4x^2 +  5x^4 
+Enter the value of x=2 
+Value of polynomial=102 
+Enter your choice==>3
+ exit
