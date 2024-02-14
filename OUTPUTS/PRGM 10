@@ -1,0 +1,20 @@
+1. Insertion in Binary Search Tree
+ 2.Search Element in Binary Search Tree
+ 3.Delete Element in Binary Search Tree
+ 4.Inorder
+ 5.Preorder
+ 6.Postorder
+ 7.Exit
+ enter your choice :1
+ Enter N value:5
+ 10 5 12 11 14
+ enter your choice :2
+ enter element to be searched :14
+ element found is: 14
+ enter your choice :4
+ the inorder display :   5    10   11   12    14
+ enter your choice :5
+ the preorder display : 10    5    12   11    14
+ enter your choice :6
+ the postorder display : 5    11   14   12    10
+ enter your choice :3
